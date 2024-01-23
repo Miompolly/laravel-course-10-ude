@@ -1,0 +1,54 @@
+composer create-project laravel/laravel projectname
+php artisan serve
+composer require laravel-frontend-presets/tailwindcss
+
+docker-compose exec laravel.test php artisan migrate
+
+
+sudo lsof -i :80 | grep LISTEN
+sudo service apache2 stop
+
+
+php artisan make:controll TasksController
+php artisan make:migration CreateTasksTable
+
+ npm install tailwindcss postcss autoprefixer
+
+php artisan make:request ProductsRequest
+
+php artisan make:seeder PostTableSeeder
+            composer dump-autoload
+            php artisan db:seed --class=PostTableSeeder
+            php artisan migrate:refresh --seed --seeder=PostTableSeeder
+            php artisan migrate:refresh --seed
+
+
+php artisan vendor:publish --tag=laravel-mail
+
+
+
+
+php artisan config:clear
+php artisan optimize:clear
+
+php artisan config:clear
+php artisan route:clear
+T
+TALL = TailwindCSS AlpineJS Laravel Livewire
+
+
+
+COMPOSER REQUIRE TYMON/JWT-AUTH
+-------------------------------
+Step 2: Publish Configuration
+Publish the configuration file for JWT:
+php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\LaravelServiceProvider"
+
+~/android-studio/bin/studio.sh
+
+
+php artisan make:factory BookFactory --model=Book
+
+
+
+
