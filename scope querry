@@ -1,0 +1,44 @@
+\App\Models\Book::where('title','LIKE','%qui%')->get();
+= Illuminate\Database\Eloquent\Collection {#6004
+    all: [
+      App\Models\Book {#6006
+        id: 2,
+        title: "Rerum qui soluta.",
+        author: "Vivian O'Reilly",
+        created_at: "2022-04-19 03:14:29",
+        updated_at: "2023-06-09 06:51:54",
+      },
+      App\Models\Book {#6007
+        id: 6,
+        title: "Velit illum dolore quis autem.",
+        author: "Willie Auer",
+        created_at: "2022-02-04 01:04:05",
+        updated_at: "2022-07-25 17:50:44",
+      },
+      App\Models\Book {#6008
+        id: 14,
+        title: "Eius qui fugiat aliquam.",
+        author: "Zena Hills",
+        created_at: "2023-02-21 08:03:09",
+        updated_at: "2024-01-07 07:01:09",
+      },
+:
+
+  
+
+
+\App\Models\Book::title('qui')->where('created_at', '>', '2024-02-02')->toSql();
+= "select * from `books` where `title` LIKE ? and `created_at` > ?"
+
+IN MODEL BOOK
+
+use Illuminate\Database\Eloquent\Builder;
+
+public function scopeTitle(Builder $query, $title): Builder
+    {
+        return $query->where('title', 'LIKE', '%'.$title.'%');
+    }
+
+
+
+
